@@ -1,14 +1,28 @@
 # ResuMatch
 
-**ResuMatch** is a high-performance Flutter application designed to bridge the gap between job seekers and their dream roles. By leveraging **Gemini 2.5 Flash Lite** via **Gemini AI**, the app provides instant, intelligent analysis of resumes against specific job descriptions.
+**ResuMatch** AI is a high-performance Flutter application designed to bridge the gap between job seekers and their professional goals. By leveraging **Gemini 2.5 Flash Lite** via **Firebase AI**, the application provides instant, intelligent analysis of resumes against specific job descriptions.
+
+## Screenshots
+
+### Home Screen
+
+|                        Light Mode                         |                        Dark Mode                         |
+| :-------------------------------------------------------: | :------------------------------------------------------: |
+| <img src="assets/screenshots/home_light.jpg" width="300"> | <img src="assets/screenshots/home_dark.jpg" width="300"> |
+
+### Results Screen
+
+|                          Light Mode                          |                          Dark Mode                          |
+| :----------------------------------------------------------: | :---------------------------------------------------------: |
+| <img src="assets/screenshots/results_light.jpg" width="300"> | <img src="assets/screenshots/results_dark.jpg" width="300"> |
 
 ## Key Features
 
-- **AI Resume Analysis**: Uses Gemini 2.5 Flash Lite for lightning-fast text processing and skill extraction.
-- **Gemini AI**: Securely powered by `firebase_ai`—no client-side API keys required.
-- **Dynamic UI**: Smooth animations, haptic feedback, and a reactive state-driven "Start Analysis" flow.
+- **AI Resume Analysis**: Utilizes Gemini 2.5 Flash Lite for rapid text processing and skill extraction.
+- **Firebase AI Integration**: Securely powered by `firebase_ai` to handle authentication and model interaction without client-side API keys.
+- **Dynamic UI**: Features smooth animations, haptic feedback, and a reactive state-driven analysis flow.
 - **PDF Integration**: Direct text extraction from uploaded resume files.
-- **Actionable Insights**: Get a percentage match score, identified strengths, and a list of missing keywords/skills.
+- **Actionable Insights**: Provides a percentage match score, identified strengths, and a list of missing keywords or skills.
 
 ## Tech Stack
 
@@ -22,38 +36,36 @@
 ### 1. Firebase Setup
 
 1. Create a new project in the [Firebase Console](https://console.firebase.google.com/).
-2. Enable **GEMINI AI** in the Firebase sidebar (under "Build").
-3. Add your Android/iOS app to the project.
+2. Enable **Gemini AI** (Gemini AI for Firebase) in the Firebase sidebar under the Build section.
+3. Add your Android and iOS applications to the project.
 
 ### 2. Local Configuration
 
-Ensure you have the [Firebase CLI](https://firebase.google.com/docs/cli) installed, then run:
+Ensure the [Firebase CLI](https://firebase.google.com/docs/cli) is installed, then execute:
 
 ```bash
 flutterfire configure
-
 ```
 
-This will generate `firebase_options.dart` and link your app to the correct project.
+This command generates the `firebase_options.dart` file and links the application to the specified project.
 
-### 3. Running the App
+### 3. Running the Application
 
 ```bash
-# Get dependencies
+# Install dependencies
 flutter pub get
 
-# Launch on your device/emulator
+# Launch on device or emulator
 flutter run
-
 ```
 
 ## Contributing
 
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+Pull requests are welcome. For major changes, please open an issue first to discuss the proposed updates.
 
 ## License
 
-Distributed under the Attribution-NonCommercial-ShareAlike 4.0 International License. See [LICENSE](LICENSE) for more information.
+Distributed under the Attribution-NonCommercial-ShareAlike 4.0 International License. See [LICENSE](https://www.google.com/search?q=LICENSE) for more information.
 
 ## Contact
 
@@ -62,4 +74,4 @@ Distributed under the Attribution-NonCommercial-ShareAlike 4.0 International Lic
 
 ## Show your support
 
-Give a star if you like this project!
+Give a star if you find this project useful.
